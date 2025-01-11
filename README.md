@@ -102,11 +102,5 @@ Below are some screenshots demonstrating the functionality of the database appli
 
 1. **cx_Oracle Import Error**: Ensure that the Oracle Instant Client is installed, and its path is correctly set using `cx_Oracle.init_oracle_client`.
 2. **Database Connection Issues**: Verify that the Oracle XE service is running and accessible on port `1521`.
-   2.1. **Error connecting to database: ORA-12541**: Open up services.msc and start the `OracleOraDB21Home2TNSListener` service.
-
-
------ EXECUTING connect_to_db -----
-Error connecting to database: ORA-12541: Cannot connect. No listener at host 127.0.0.1 port 1521.
-Help: https://docs.oracle.com/error-help/db/ora-12541/
-
+2.1. **Error connecting to database: ORA-12541**: Open up services.msc and start the `OracleOraDB21Home2TNSListener` service.
 
