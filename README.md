@@ -79,8 +79,22 @@ The application supports the following database tables:
 
 ---
 
-## Screenshots
-(TODO)
+### Application Screenshots
+
+Below are some screenshots demonstrating the functionality of the database application:
+
+1. **Database Connection**  
+   ![Database GUI connection on startup](./images/connected.png)  
+   This screenshot shows the database GUI as it opens and establishes a connection to the Oracle database.
+
+2. **Executing Queries**  
+   ![Running a query and displaying results](./images/query.png)  
+   Here, a query is being executed as written on the right, and the results are displayed in the left box of the application.
+
+3. **Managing Movie Records**  
+   ![Adding a new movie and viewing movie table](./images/add_movie.png)  
+   This screenshot showcases multiple components: the movie table view, a query fetching all movie records, and a pop-up window for adding a new movie to the database.
+
 
 ---
 
@@ -88,3 +102,11 @@ The application supports the following database tables:
 
 1. **cx_Oracle Import Error**: Ensure that the Oracle Instant Client is installed, and its path is correctly set using `cx_Oracle.init_oracle_client`.
 2. **Database Connection Issues**: Verify that the Oracle XE service is running and accessible on port `1521`.
+   2.1. **Error connecting to database: ORA-12541**: Open up services.msc and start the `OracleOraDB21Home2TNSListener` service.
+
+
+----- EXECUTING connect_to_db -----
+Error connecting to database: ORA-12541: Cannot connect. No listener at host 127.0.0.1 port 1521.
+Help: https://docs.oracle.com/error-help/db/ora-12541/
+
+
