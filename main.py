@@ -19,7 +19,7 @@ def connect_to_db():
 
         # Define connection details
         user = "SYS"  # Connecting as SYS user
-        password = "123p"  # Password for SYS user
+        password = "your_password"  # Password for SYS user
         dsn = cx_Oracle.makedsn("localhost", 1521, service_name="XE")  # Default service name for Oracle XE
         encoding = "UTF-8"
         mode = cx_Oracle.SYSDBA
